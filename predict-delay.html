@@ -29,7 +29,7 @@
         function delay_out() {
             var y = prompt("Enter Delay:");
             var out;
-            if(y==null){
+            if((y==null) || (y=='')){
                 out = "Did you forget <br>to give input?"
             }
             else if(y.type != Number.type){

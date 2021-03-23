@@ -16,12 +16,57 @@
     </nav>
     
     <center>
-    <div class="jumbotron" style="margin-top:25px; background-color: #424852; width: 800px; height: auto; border-style:solid; border-width: thin; border-color: black; padding: 20px;">
+    <div class="jumbotron" style="margin-top:25px; margin-bottom: 25px; background-color: #424852; width: 800px; height: auto; border-style:solid; border-width: thin; border-color: black; padding: 20px;">
     <h1 style="text-align: center; color:#70ACB1;"><img src="logo.png" style="width:5em;">Alpha Flight API</h1>
-    <p style="margin-top: 15px; text-align: justify; color:#70ACB1;">&nbsp; We deeply apologize from all the people who have been excited for our API which will revolutionize the Field of Aviation but unfortunately it is not ready yet. The project is still in early development stages, hence we can not provide the API that will change the world(or at least our grades (which is my world :D )). When it is done however you will be able to enter this website and implement it to your project just like you would in the example below. </p>
+    <p style="margin-top: 15px; text-align: justify; color:#70ACB1;">&nbsp; We deeply apologize from all the people who have been excited for our API which will revolutionize the Field of Aviation but unfortunately it is not ready yet. The project is still in early development stages, hence we can not provide the API that will change the world(or at least our grades (which is my world :D )). When it is done however you will be able to enter this website and implement it to your project just like you would in the example below: </p>
     <div class="jumbotron" style="margin-top:25px; background-color: #70ACB1; width: 700px; height: auto; border-style:solid; border-width: thin; border-color: black; padding: 10px;">
         <a style="color:#59606D; text-decoration: none;" href="http://www.omdbapi.com/" target="_blank">http://www.omdbapi.com/</a>
-    </div>
+    
+        </div>
+        <p style="margin-top: 15px; text-align: justify; color:#70ACB1;">&nbsp; In its current state the "Predict Delay" page asks user to input the delay they expect there to be and then outputs the exact same amount of delay (does basically nothing) using the following function:</p>
+        <div class="jumbotron" style="margin-top:25px; background-color: #70ACB1; width: 700px; height: auto; border-style:solid; border-width: thin; border-color: black; padding: 10px;">
+        <p style="margin-top: 15px; text-align:center; color:#59606D;">f(x) = x</p>
+        </div>
+        
+        <p style="margin-top: 15px; text-align: justify; color:#70ACB1;">&nbsp; In the later stages we wish to implement a machine learning algorithm using a function similar to below with the features similar to below:</p>
+        <div class="jumbotron" style="margin-top:25px; background-color: #70ACB1; width: 700px; height: auto; border-style:solid; border-width: thin; border-color: black; padding: 10px;">
+        <p style="margin-top: 15px; text-align:center; color:#59606D;">hθ(x)=θ0 + θ1*x1 + θ2*x2 + θ3*x3 + θ4*x4 + ... + θn*xn</p>
+            <table>
+            <thead>
+                <tr>
+                    <td style="border-style:solid; border-width: thin; border-color:black; padding: 10px; background-color:#59606D; color:#70ACB1; ">Feature Order</td>
+                    <td style="border-style:solid; border-width: thin; border-color:black; padding: 10px; background-color:#59606D; color:#70ACB1; ">Feature Name</td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td style="border-style:solid; border-width: thin; border-color:black; padding: 10px; background-color:#59606D; color:#70ACB1; text-align: center;">x1</td>
+                    <td style="border-style:solid; border-width: thin; border-color:black; padding: 10px; background-color:#59606D; color:#70ACB1; text-align: center;">Air Traffic</td>
+                    </tr>
+                <tr>
+                    <td style="border-style:solid; border-width: thin; border-color:black; padding: 10px; background-color:#59606D; color:#70ACB1; text-align: center;">x2</td>
+                    <td style="border-style:solid; border-width: thin; border-color:black; padding: 10px; background-color:#59606D; color:#70ACB1; text-align: center;">Weather</td>
+                    </tr>
+                <tr>
+                    <td style="border-style:solid; border-width: thin; border-color:black; padding: 10px; background-color:#59606D; color:#70ACB1; text-align: center;">x3</td>
+                    <td style="border-style:solid; border-width: thin; border-color:black; padding: 10px; background-color:#59606D; color:#70ACB1; text-align: center;">Crew Related</td>
+                    </tr>
+                <tr>
+                    <td style="border-style:solid; border-width: thin; border-color:black; padding: 10px; background-color:#59606D; color:#70ACB1; text-align: center;">x4</td>
+                    <td style="border-style:solid; border-width: thin; border-color:black; padding: 10px; background-color:#59606D; color:#70ACB1; text-align: center;">Cargo Related</td>
+                    </tr> 
+                <tr>
+                    <td style="border-style:solid; border-width: thin; border-color:black; padding: 10px; padding-bottom: 15px; background-color:#59606D; color:#70ACB1; text-align: center;">.<br>.<br>.</td>
+                    <td style="border-style:solid; border-width: thin; border-color:black; padding: 10px;  padding-bottom: 15px; background-color:#59606D; color:#70ACB1; text-align: center;">.<br>.<br>.</td>
+                    </tr>
+                <tr>
+                    <td style="border-style:solid; border-width: thin; border-color:black; padding: 10px; background-color:#59606D; color:#70ACB1; text-align: center;">xn</td>
+                    <td style="border-style:solid; border-width: thin; border-color:black; padding: 10px; background-color:#59606D; color:#70ACB1; text-align: center;">Feature n</td>
+                    </tr>
+                </tbody>
+            
+            </table>
+        </div>
         
     </div>
     </center>
