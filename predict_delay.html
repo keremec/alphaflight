@@ -1,0 +1,39 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Alpha Flight | Predict Delay</title>
+    </head>
+<body>
+    <nav class="navbar">   
+        <a class="navbar-link-img" href="index.html"><img src="logo_mini.jpg" style="width: 70px; height: 70px; border-style:solid; border-width: thin; border-color: white; border-radius: 5px 5px 5px 5px; float: left; "></a>
+        <a class="navbar-link" href="predict_delay.html">Predict Delay</a>
+        <a class="navbar-link" href="whatsnew.html">What's New?</a>
+        <a class="navbar-link" href="about.html">About</a>
+        <a class="navbar-link" href="downloads.html">Downloads</a>
+    </nav>
+    
+    <center> 
+        <img class="logo-img1" src="logo.png" style="margin-top: 102px;">
+        
+        <div id="delay-out" style="margin-top: 35px;">
+            <h3 class="delay-header" style="margin-top: 35px;">Press the Button to<br>Estimate Delay</h3>
+            </div>
+        <button class="delay-button" style="margin-top: 20px; margin-bottom: 25px;" onclick="delay_out()">The Button</button>
+        
+        </center>
+    
+    <script type="text/javascript">
+        function delay_out() {
+            var y = prompt("Enter Delay:");
+            var out;
+            if((y==null) || (y=='')){
+                out = "Did you forget <br>to give input?"
+            }
+            else{out="Estimated Delay is:<br>" + y + " min.";}
+        document.getElementById("delay-out").innerHTML = "<h3 class='delay-header' style='margin-top: 35px;'>"+ out +"</h3>";
+        
+}
+    </script>
+    
+    </body>
+</html>
