@@ -278,6 +278,7 @@ li {
     border-top-style: solid;
     border-width: 1px;
     border-color: #000000;
+    overflow-x: scroll;
 }
 
 .log-img {
