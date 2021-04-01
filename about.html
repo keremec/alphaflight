@@ -1,0 +1,67 @@
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Alpha Flight API | About</title>
+    </head>
+<body onload="teoman()">
+    
+    <nav class="topbar">
+        <ul class="navbar-ul">
+            <li>
+                <a class="navbar-link-home" href="index.html">Alpha Flight API</a>
+            </li>
+            <li>
+                <a class="navbar-link" href="predictdelay.html">Predict Delay</a>
+            </li>
+            <li>
+                <a class="navbar-link" href="whatsnew.html">What's New ?</a>
+            </li>
+            <li>
+                <a class="navbar-link" href="about.html">About</a>
+            </li>
+            <li>
+                <a class="navbar-link" href="downloads.html">Downloads</a>
+            </li>
+            </ul>
+        </nav>
+    
+    <div class="content-box1">
+        <h1 class="def-text">Project : Alpha Flight API</h1>
+        <img src="logo.png" class="img1">
+        <p>&nbsp; &nbsp; The project Alpha Flight API is a machine learning application interface being developed by a group of students studying Computer Engineering at the Engineering Faculty of Istanbul Kultur University. The project aims to develop a machine learning program to predict airline delays and cancellations. It is a project assigned for CSE6064-Software Engineering Lecture. The group of four students developing this project made this website to update their instructor on the project on a weekly basis. Yet anyone is free to check out how the project is going and learn from what we experience completing this project.</p>
+        <p><b>TL-DR : This website is about the term project of group 24 of CSE6064-Software Engineering lecture.</b></p>
+        
+    </div>
+    
+    
+    
+    <h1 class="hall-header">Project : Alpha Flight API<br>Hall of Fame</h1>
+    
+    <div id="hall">
+        
+    </div>
+    
+    
+    <script type="text/javascript">
+        
+        function teoman(){
+            document.getElementById("hall").innerHTML = "<div class='hall-box'><div class='hall-member-img' style='background-image: url(member-img/teoman.jpg);'></div><div class='hall-button-box'><button class='hall-button' style='float: left;' onclick='zeynep()'>&lt;</button><button class='hall-button' style='float: right;' onclick='dennis()'>&gt;</button></div><div class='hall-member-info'><h3 class='hall-member-role'>Lead Developer<br>Teoman Berkay AYAZ</h3></div></div>"
+        }
+        
+        function dennis(){
+            document.getElementById("hall").innerHTML = "<div class='hall-box'><div class='hall-member-img' style='background-image: url(member-img/def-avatar.jpg);'></div><div class='hall-button-box'><button class='hall-button' style='float: left;' onclick='teoman()'>&lt;</button><button class='hall-button' style='float: right;' onclick='kerem()'>&gt;</button></div><div class='hall-member-info'><h3 class='hall-member-role'>Python Developer<br>Dennis Brezina</h3></div></div>"
+        }
+        
+        function kerem(){
+            document.getElementById("hall").innerHTML = "<div class='hall-box'><div class='hall-member-img' style='background-image: url(member-img/def-avatar.jpg);'></div><div class='hall-button-box'><button class='hall-button' style='float: left;' onclick='dennis()'>&lt;</button><button class='hall-button' style='float: right;' onclick='zeynep()'>&gt;</button></div><div class='hall-member-info'><h3 class='hall-member-role'>Project Tester<br>Kerem Safa Dirican</h3></div></div>"
+        }
+        
+        function zeynep(){
+            document.getElementById("hall").innerHTML = "<div class='hall-box'><div class='hall-member-img' style='background-image: url(member-img/def-avatar.jpg);'></div><div class='hall-button-box'><button class='hall-button' style='float: left;' onclick='kerem()'>&lt;</button><button class='hall-button' style='float: right;' onclick='teoman()'>&gt;</button></div><div class='hall-member-info'><h3 class='hall-member-role'>Project Documentator<br>Zeynep Simge Sedef</h3></div></div>"
+        }
+        
+        </script>
+    </body>    
+</html>

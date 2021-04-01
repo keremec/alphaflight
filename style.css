@@ -1,0 +1,341 @@
+
+body {
+    background-color: #f5f5f5;
+    margin: 0;
+    padding-top: 125px;
+    padding-bottom: 50px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.hall-member-img {
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    border-radius: 50%;
+    margin: 0 auto 0 auto;
+    border-color: #364f6b;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.hall-button {
+    padding: 5px;
+    font-size: 40px;
+    color: #364f6b;
+    border: none;
+    background: none;
+    opacity: 0.50;
+    margin-bottom: 10px;
+}
+
+.hall-button:hover{
+    opacity: 1;
+}
+
+.hall-box {
+    width: 250px;
+    height: 560px;
+    margin: 50px auto 0 auto;
+    background-color: #364f6b;
+    border-radius: 125px 125px 125px 125px;
+}
+
+.hall-member-info {
+    width: 200px;
+    height: 200px;
+    padding:25px;
+    border-radius: 50%;
+    background-color: #f5f5f5;
+    margin: 0 auto 0 auto;
+    border-color: #364f6b;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.hall-member-role {
+    text-align: center;
+    margin-top: 65px;
+    color: #364f6b;
+}
+
+.topbar {
+    height: 100px;
+    width: 100%;
+    background-color: #364f6b;
+    position: fixed;
+    top: 0;
+    border-color: #000000;
+    border-width: 1px;
+    border-bottom-style: solid;
+}
+
+li {
+    display: inline;
+}
+
+.navbar-link {
+    margin: 0 25px 0 0;
+    background-color: #f5f5f5;
+    padding: 7px 15px 7px 15px;
+    border-radius: 5px 5px 5px 5px;
+    text-decoration: none;
+    color: #000000;
+    border-color: #f5f5f5;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.navbar-link:hover{
+    background-color: #364f6b;
+    color: #f5f5f5;
+    border-color: #000000;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.navbar-ul {
+    margin: 35px 0 0 0;
+}
+
+.navbar-link-home {
+    margin: 0 25px 0 0;
+    background-color: #f5f5f5;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px 5px 5px 5px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    border-color: #f5f5f5;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.navbar-link-home:hover{
+    background-color: #364f6b;
+    color: #f5f5f5;
+    border-color: #000000;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.content-box1 {
+    width: 850px;
+    height: auto;
+    margin: 0 auto 50px auto;
+    padding: 25px;
+    
+    border-color: #364f6b;
+    border-width: 1px;
+    border-style: solid;
+}
+.img1 {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+}
+
+.content-box1-innerbox {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #364f6b;
+    color: #ffffff;
+    padding: 25px;
+}
+
+.def-link {
+    color: inherit;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+}
+
+.def-text {
+    color: inherit;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+}
+
+.tbl-cell1 {
+    background-color: #ffffff;
+    margin: 0;
+    border-color: #000000;
+    border-width: 1px;
+    border-style: solid;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+.tbl-def {
+    border-spacing:0;
+    border-collapse: collapse;
+    margin: 25px auto;
+}
+
+.hall-header {
+    background-color: #364f6b;
+    text-align: center;
+    margin: 0 auto 0 auto;
+    width: 600px;
+    color: #ffffff;
+    border-color: #000000;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.download-box {
+    width: 300px;
+    background-color: #364f6b;
+    border-color: #000000;
+    border-width: 1px;
+    border-style: solid;
+    padding: 25px;
+    margin: 0 auto 50px auto;
+    color: #ffffff;
+}
+
+
+
+.download-link {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 100px;
+}
+
+.download-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.hall-button-box {
+    height: 60px;
+    width: 248px;
+    background-color: #f5f5f5;
+    margin: 0 1px 0 1px;
+
+}
+
+.log {
+    width: 700px;
+    margin: 0 auto 50px auto;
+    border-color: #364f6b;
+    border-bottom-color: #000000;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.log-content {
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px 0; 
+}
+
+.log-header {
+    text-align: center;
+}
+
+.log-p {
+    margin: 25px 15px;
+    width: auto;
+    text-align: justify;
+}
+
+.res-tbl {
+    border-spacing:0;
+    border-collapse: collapse;
+}
+
+.res-tbl-cell {
+    padding: 7px 14px;
+    background-color: #364f6b;
+    color: #ffffff;
+    border-right-style: solid;
+    border-width: 1px;
+    border-color: #000000;
+}
+
+.res-tbl-link-cell {
+    padding: 7px 14px;
+    background-color: #364f6b;
+    color: #ffffff;
+    border-right-style: solid;
+    border-width: 1px;
+    border-color: #000000;
+}
+
+.res-tbl-link-cell:hover{
+    background-color: #ffffff;
+    color: #364f6b;
+}
+
+.res-div {
+    background-color: #364f6b;
+    border-top-style: solid;
+    border-width: 1px;
+    border-color: #000000;
+}
+
+.log-img {
+    width: 400px;
+    margin:0 auto;
+    display: block;
+}
+
+.log-author {
+    padding: 7px 14px;
+    margin: 0 0;
+    border-bottom-style: solid;
+    border-right-style: solid;
+    border-color: #364f6b;
+    border-width: 1px;
+    float: left;
+}
+
+.log-date {
+    padding: 7px 14px;
+    margin: 0 0;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-color: #364f6b;
+    border-width: 1px;
+    float: right;
+}
+.img2 {
+    width: 333px;
+    margin: 0 auto;
+    display: block;
+}
+
+.estimate-header {
+    width: 333px;
+    margin: 25px auto;
+    text-align: center;
+    font-size: 2rem;
+    background-color: #364f6b;
+    padding: 7px 17px;
+    border-radius: 10px 10px 10px 10px;
+    color: #f5f5f5;
+}
+
+.estimate-button {
+    font-size: 2rem;
+    margin: 0 auto;
+    display: block;
+    padding: 10px 17px;
+    background-color: #cd5c5c;
+    color: #f5f5f5;
+    border-radius: 7px;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 1px;
+}
+
+.estimate-button:hover{
+    background-color: #f5f5f5;
+    color: #cd5c5c;
+}
