@@ -1,6 +1,0 @@
-#f5f5f5
-#364f6b
-
-border-color: #364f6b;
-border-width: 1px;
-border-style: solid;
