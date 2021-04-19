@@ -1,67 +1,57 @@
+<!DOCTYPE html>
 <html>
-<head>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="style.css"> 
-    <title>Alpha Flight API | About</title>
+    <head>
+        <title>Alpha Flight API | Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="style.css">
     </head>
-<body onload="teoman()">
-    
-    <nav class="topbar">
-        <ul class="navbar-ul">
-            <li>
-                <a class="navbar-link-home" href="index.html">Alpha Flight API</a>
-            </li>
-            <li>
-                <a class="navbar-link" href="predictdelay.html">Predict Delay</a>
-            </li>
-            <li>
-                <a class="navbar-link" href="whatsnew.html">What's New ?</a>
-            </li>
-            <li>
-                <a class="navbar-link" href="about.html">About</a>
-            </li>
-            <li>
-                <a class="navbar-link" href="downloads.html">Downloads</a>
-            </li>
-            </ul>
+    <body onload="teoman()">
+        <nav class="navbar">
+            <a href="index.html" class="home-link">
+                <div class="home-link-div"></div>
+            </a>
         </nav>
-    
-    <div class="content-box1">
-        <h1 class="def-text">Project : Alpha Flight API</h1>
-        <img src="logo.png" class="img1">
-        <p>&nbsp; &nbsp; The project Alpha Flight API is a machine learning application interface being developed by a group of students studying Computer Engineering at the Engineering Faculty of Istanbul Kultur University. The project aims to develop a machine learning program to predict airline delays and cancellations. It is a project assigned for CSE6064-Software Engineering Lecture. The group of four students developing this project made this website to update their instructor on the project on a weekly basis. Yet anyone is free to check out how the project is going and learn from what we experience completing this project.</p>
-        <p><b>TL-DR : This website is about the term project of group 24 of CSE6064-Software Engineering lecture.</b></p>
-        
-    </div>
-    
-    
-    
-    <h1 class="hall-header">Project : Alpha Flight API<br>Hall of Fame</h1>
-    
-    <div id="hall">
-        
-    </div>
-    
-    
-    <script type="text/javascript">
-        
-        function teoman(){
-            document.getElementById("hall").innerHTML = "<div class='hall-box'><div class='hall-member-img' style='background-image: url(teoman.jpg);'></div><div class='hall-button-box'><button class='hall-button' style='float: left;' onclick='zeynep()'>&lt;</button><button class='hall-button' style='float: right;' onclick='dennis()'>&gt;</button></div><div class='hall-member-info'><h3 class='hall-member-role'>Lead Developer<br>Teoman Berkay AYAZ</h3></div></div>"
-        }
-        
-        function dennis(){
-            document.getElementById("hall").innerHTML = "<div class='hall-box'><div class='hall-member-img' style='background-image: url(dennis.jpg);'></div><div class='hall-button-box'><button class='hall-button' style='float: left;' onclick='teoman()'>&lt;</button><button class='hall-button' style='float: right;' onclick='kerem()'>&gt;</button></div><div class='hall-member-info'><h3 class='hall-member-role'>Python Developer<br>Dennis Brezina</h3></div></div>"
-        }
-        
-        function kerem(){
-            document.getElementById("hall").innerHTML = "<div class='hall-box'><div class='hall-member-img' style='background-image: url(def-avatar.jpg);'></div><div class='hall-button-box'><button class='hall-button' style='float: left;' onclick='dennis()'>&lt;</button><button class='hall-button' style='float: right;' onclick='zeynep()'>&gt;</button></div><div class='hall-member-info'><h3 class='hall-member-role'>Project Tester<br>Kerem Safa Dirican</h3></div></div>"
-        }
-        
-        function zeynep(){
-            document.getElementById("hall").innerHTML = "<div class='hall-box'><div class='hall-member-img' style='background-image: url(def-avatar.jpg);'></div><div class='hall-button-box'><button class='hall-button' style='float: left;' onclick='kerem()'>&lt;</button><button class='hall-button' style='float: right;' onclick='teoman()'>&gt;</button></div><div class='hall-member-info'><h3 class='hall-member-role'>Project Documentator<br>Zeynep Simge Sedef</h3></div></div>"
-        }
-        
-        </script>
-    </body>    
+
+        <div class="sidebar">
+            <ul>
+                <li><a href="predict_delay.html" class="sidebar-link">Predict Delay</a></li>
+                <li><a href="whatsnew.html" class="sidebar-link">What's New ?</a></li>
+                <li><a href="downloads.html" class="sidebar-link">Downloads</a></li>
+                <li><a href="about.html" class="sidebar-link">About</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <img src="logo.png" alt="the_logo" class="content-img">
+            <p>&nbsp; &nbsp;The project Alpha Flight API is a machine learning application interface being developed by a group of students studying Computer Engineering at the Engineering Faculty of Istanbul Kultur University. The project aims to develop a machine learning program to predict airline delays and cancellations. It is a project assigned for CSE6064-Software Engineering Lecture. The group of four students developing this project made this website to update their instructor on the project on a weekly basis. Yet anyone is free to check out how the project is going and learn from what we experience completing this project.</p>
+            <div id="hall">
+                
+            </div>
+        </div>
+    </body>
+    <script>
+    function teoman(){
+        document.getElementById("hall").innerHTML = "<div class='hall-header'><h2>Project Alpha Flight API<br>Members :</h2></div><div class='hall-of-fame' style='background-image: url(teoman.jpg);'><button class='hall-btn' style='float: left;' onclick='atakan()'>&lt;</button><button class='hall-btn' style='float: right;' onclick='dennis()'>&gt;</button></div><div id='hall-member-tag'><h2>Teoman Berkay AYAZ<br>Lead Developer</h2></div>"
+    }
+
+    function dennis(){
+        document.getElementById("hall").innerHTML = "<div class='hall-header'><h2>Project Alpha Flight API<br>Members :</h2></div><div class='hall-of-fame' style='background-image: url(dennis.jpg);'><button class='hall-btn' style='float: left;' onclick='teoman()'>&lt;</button><button class='hall-btn' style='float: right;' onclick='kerem()'>&gt;</button></div><div id='hall-member-tag'><h2>Dennis Brazina<br>Python Developer</h2></div>"
+    }
+
+    function kerem(){
+        document.getElementById("hall").innerHTML = "<div class='hall-header'><h2>Project Alpha Flight API<br>Members :</h2></div><div class='hall-of-fame' style='background-image: url(def-avatar.jpg);'><button class='hall-btn' style='float: left;' onclick='dennis()'>&lt;</button><button class='hall-btn' style='float: right;' onclick='zeynep()'>&gt;</button></div><div id='hall-member-tag'><h2>Kerem Safa Dirican<br>Project Tester</h2></div>"
+    }
+
+    function zeynep(){
+        document.getElementById("hall").innerHTML = "<div class='hall-header'><h2>Project Alpha Flight API<br>Members :</h2></div><div class='hall-of-fame' style='background-image: url(def-avatar.jpg);'><button class='hall-btn' style='float: left;' onclick='kerem()'>&lt;</button><button class='hall-btn' style='float: right;' onclick='atakan()'>&gt;</button></div><div id='hall-member-tag'><h2>Zeynep Simge Sedef<br>Project Documentator</h2></div>"
+    }
+
+    function atakan(){
+        document.getElementById("hall").innerHTML = "<div class='hall-header'><h2>Project Alpha Flight API<br>Members :</h2></div><div class='hall-of-fame' style='background-image: url(def-avatar.jpg);'><button class='hall-btn' style='float: left;' onclick='zeynep()'>&lt;</button><button class='hall-btn' style='float: right;' onclick='teoman()'>&gt;</button></div><div id='hall-member-tag'><h2>Atakan Özbay<br>Web Developer</h2></div>"
+    }
+
+    </script>
 </html>
+
