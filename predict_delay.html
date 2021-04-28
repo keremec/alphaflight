@@ -1,46 +1,41 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Alpha Flight API | Predict Delay</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet"> 
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <nav class="navbar">
-            <a href="index.html" class="home-link">
-                <div class="home-link-div"></div>
-            </a>
-        </nav>
-
-        <div class="sidebar">
-            <ul>
-                <li><a href="predict_delay.html" class="sidebar-link">Predict Delay</a></li>
-                <li><a href="whatsnew.html" class="sidebar-link">What's New ?</a></li>
-                <li><a href="downloads.html" class="sidebar-link">Downloads</a></li>
-                <li><a href="about.html" class="sidebar-link">About</a></li>
-            </ul>
+<head>
+    <title>Alpha Flight API</title>
+    <link rel="stylesheet" type="text/css" href="navigation.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="nav">
+        <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle"/>
+        <div class="menu">
+            <a href="index.html">Alpha Flight API</a>
+            <a href="predict_delay.html">Predict Delay</a>
+            <a href="whats_new.html">What's New</a>
+            <a href="about.html">About</a>
+            <a href="downloads.html">Downloads</a>
         </div>
-        
-        <div id="delay">
+    </div>
+
+     <div id="delay">
             
-        </div>
+    </div>
 
-        <div class="input-box">
-            <input type="number" placeholder="Var 1" id="var1">
-            <input type="number" placeholder="Var 2" id="var2">
-            <input type="number" placeholder="Var 3" id="var3">
-            <input type="number" placeholder="Var 4" id="var4">
-            <button onclick="predict()">Predict Delay</button>
-
-        </div>
-
-        
-
-    </body>
+    <div class="input-box">
+        <input type="number" placeholder="Var 1" id="var1">
+        <input type="number" placeholder="Var 2" id="var2">
+        <input type="number" placeholder="Var 3" id="var3">
+        <input type="number" placeholder="Var 4" id="var4">
+        <button onclick="predict()">Predict Delay</button>
+    </div>
+</body>
     
-    <script type="text/javascript">
+<script type="text/javascript">
         function variable1(){
             var x = document.getElementById("var1").value;
             var coef = 1;
@@ -71,6 +66,6 @@
             
             document.getElementById("delay").innerHTML = "<h1>Delay is about " + delay + "  mins</h1>";
         }
-    </script>
-
+</script>
+    
 </html>

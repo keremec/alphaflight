@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Alpha Flight API | Home</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet"> 
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body onload="teoman()">
-        <nav class="navbar">
-            <a href="index.html" class="home-link">
-                <div class="home-link-div"></div>
-            </a>
-        </nav>
-
-        <div class="sidebar">
-            <ul>
-                <li><a href="predict_delay.html" class="sidebar-link">Predict Delay</a></li>
-                <li><a href="whatsnew.html" class="sidebar-link">What's New ?</a></li>
-                <li><a href="downloads.html" class="sidebar-link">Downloads</a></li>
-                <li><a href="about.html" class="sidebar-link">About</a></li>
-            </ul>
+<head>
+    <title>Alpha Flight API</title>
+    <link rel="stylesheet" type="text/css" href="navigation.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet"> 
+</head>
+<body onload="teoman()">
+    <div class="nav">
+        <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle"/>
+        <div class="menu">
+            <a href="index.html">Alpha Flight API</a>
+            <a href="predict_delay.html">Predict Delay</a>
+            <a href="whats_new.html">What's New</a>
+            <a href="about.html">About</a>
+            <a href="downloads.html">Downloads</a>
         </div>
+    </div>
 
         <div class="content">
             <img src="logo.png" alt="the_logo" class="content-img">
@@ -32,26 +31,25 @@
         </div>
     </body>
     <script>
-    function teoman(){
-        document.getElementById("hall").innerHTML = "<div class='hall-header'><h2>Project Alpha Flight API<br>Members :</h2></div><div class='hall-of-fame' style='background-image: url(teoman.jpg);'><button class='hall-btn' style='float: left;' onclick='atakan()'>&lt;</button><button class='hall-btn' style='float: right;' onclick='dennis()'>&gt;</button></div><div id='hall-member-tag'><h2>Teoman Berkay AYAZ<br>Lead Developer</h2></div>"
+        function teoman(){
+            document.getElementById("hall").innerHTML = "<div class='hall-header'><h2>Project Alpha Flight API<br>Members :</h2></div><div class='hall-of-fame' style='background-image: url(teoman.jpg);'><button class='hall-btn' style='float: left;' onclick='atakan()'>&lt;</button><button class='hall-btn' style='float: right;' onclick='dennis()'>&gt;</button></div><div id='hall-member-tag'><h2>Teoman Berkay AYAZ<br>Lead Developer</h2></div>"
     }
 
-    function dennis(){
-        document.getElementById("hall").innerHTML = "<div class='hall-header'><h2>Project Alpha Flight API<br>Members :</h2></div><div class='hall-of-fame' style='background-image: url(dennis.jpg);'><button class='hall-btn' style='float: left;' onclick='teoman()'>&lt;</button><button class='hall-btn' style='float: right;' onclick='kerem()'>&gt;</button></div><div id='hall-member-tag'><h2>Dennis Brazina<br>Python Developer</h2></div>"
+        function dennis(){
+            document.getElementById("hall").innerHTML = "<div class='hall-header'><h2>Project Alpha Flight API<br>Members :</h2></div><div class='hall-of-fame' style='background-image: url(dennis.jpg);'><button class='hall-btn' style='float: left;' onclick='teoman()'>&lt;</button><button class='hall-btn' style='float: right;' onclick='kerem()'>&gt;</button></div><div id='hall-member-tag'><h2>Dennis Brazina<br>Python Developer</h2></div>"
     }
 
-    function kerem(){
-        document.getElementById("hall").innerHTML = "<div class='hall-header'><h2>Project Alpha Flight API<br>Members :</h2></div><div class='hall-of-fame' style='background-image: url(def-avatar.jpg);'><button class='hall-btn' style='float: left;' onclick='dennis()'>&lt;</button><button class='hall-btn' style='float: right;' onclick='zeynep()'>&gt;</button></div><div id='hall-member-tag'><h2>Kerem Safa Dirican<br>Project Tester</h2></div>"
+        function kerem(){
+            document.getElementById("hall").innerHTML = "<div class='hall-header'><h2>Project Alpha Flight API<br>Members :</h2></div><div class='hall-of-fame' style='background-image: url(def-avatar.jpg);'><button class='hall-btn' style='float: left;' onclick='dennis()'>&lt;</button><button class='hall-btn' style='float: right;' onclick='zeynep()'>&gt;</button></div><div id='hall-member-tag'><h2>Kerem Safa Dirican<br>Project Tester</h2></div>"
     }
 
-    function zeynep(){
-        document.getElementById("hall").innerHTML = "<div class='hall-header'><h2>Project Alpha Flight API<br>Members :</h2></div><div class='hall-of-fame' style='background-image: url(def-avatar.jpg);'><button class='hall-btn' style='float: left;' onclick='kerem()'>&lt;</button><button class='hall-btn' style='float: right;' onclick='atakan()'>&gt;</button></div><div id='hall-member-tag'><h2>Zeynep Simge Sedef<br>Project Documentator</h2></div>"
+        function zeynep(){
+            document.getElementById("hall").innerHTML = "<div class='hall-header'><h2>Project Alpha Flight API<br>Members :</h2></div><div class='hall-of-fame' style='background-image: url(def-avatar.jpg);'><button class='hall-btn' style='float: left;' onclick='kerem()'>&lt;</button><button class='hall-btn' style='float: right;' onclick='atakan()'>&gt;</button></div><div id='hall-member-tag'><h2>Zeynep Simge Sedef<br>Project Documentator</h2></div>"
     }
 
-    function atakan(){
-        document.getElementById("hall").innerHTML = "<div class='hall-header'><h2>Project Alpha Flight API<br>Members :</h2></div><div class='hall-of-fame' style='background-image: url(def-avatar.jpg);'><button class='hall-btn' style='float: left;' onclick='zeynep()'>&lt;</button><button class='hall-btn' style='float: right;' onclick='teoman()'>&gt;</button></div><div id='hall-member-tag'><h2>Atakan Özbay<br>Web Developer</h2></div>"
+        function atakan(){
+            document.getElementById("hall").innerHTML = "<div class='hall-header'><h2>Project Alpha Flight API<br>Members :</h2></div><div class='hall-of-fame' style='background-image: url(def-avatar.jpg);'><button class='hall-btn' style='float: left;' onclick='zeynep()'>&lt;</button><button class='hall-btn' style='float: right;' onclick='teoman()'>&gt;</button></div><div id='hall-member-tag'><h2>Atakan Özbay<br>Web Developer</h2></div>"
     }
 
     </script>
 </html>
-
